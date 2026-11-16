@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isma Restaurant | Good Food, Great Moments | Freetown</title>
+  <meta name="description" content="Isma Restaurant in Freetown, Sierra Leone. View our menu and prices, explore our services and book a table online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Isma Restaurant home">
+        <svg class="logo-hat" viewBox="0 0 48 40" aria-hidden="true">
+          <path d="M12 28c-6 0-9-5-7-10 2-4 7-5 10-3 1-6 6-10 11-9 5 0 9 4 10 9 3-2 8-1 10 3 2 5-1 10-7 10"/>
+          <path d="M12 28v8h24v-8"/><path d="M12 32h24"/><path d="M20 28v4M28 28v4"/>
+        </svg>
+        <span class="logo-text"><span class="logo-name">Isma</span><span class="logo-sub">Restaurant</span></span>
+      </a>
+
+      <!-- Mobile menu: a hidden checkbox opens and closes the menu (no JavaScript) -->
+      <input type="checkbox" id="nav-check" class="nav-check">
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#book" class="btn btn-gold btn-small">Book a Table</a>
+        <label for="nav-check" class="nav-toggle" aria-label="Open or close menu"><span></span><span></span><span></span></label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <img src="images/hero-restaurant.jpg" alt="Isma Restaurant dining room with grilled chicken, jollof rice and fresh orange juice" class="hero-img">
+      <div class="container hero-content">
+        <h1 class="hero-title">Good Food<br>Brings People Together</h1>
+        <p class="hero-text">Fresh ingredients, local and continental dishes, and a warm, cozy atmosphere in the heart of Freetown.</p>
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-gold">View Menu</a>
+          <a href="#book" class="btn btn-outline">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head">
+        <h2 class="script-title">Our Specialties</h2>
+        <p>The dishes our guests order again and again.</p>
+      </div>
+      <div class="specialties">
+        <a href="menu.html" class="special-card">
+          <img src="images/special-grilled-chicken.jpg" alt="Grilled chicken with fries, salad and dipping sauce">
+          <div class="special-body"><h3>Grilled Chicken</h3><p>Fresh &amp; healthy</p></div>
+        </a>
+        <a href="menu.html" class="special-card">
+          <img src="images/special-pasta-alfredo.jpg" alt="Creamy fettuccine Alfredo with chicken and parmesan">
+          <div class="special-body"><h3>Pasta Alfredo</h3><p>Rich &amp; creamy</p></div>
+        </a>
+        <a href="menu.html" class="special-card">
+          <img src="images/special-beef-burger.jpg" alt="Beef burger with cheddar, lettuce and tomato, served with fries">
+          <div class="special-body"><h3>Beef Burger</h3><p>Juicy &amp; tasty</p></div>
+        </a>
+        <a href="menu.html" class="special-card">
+          <img src="images/special-fresh-salad.jpg" alt="Fresh salad with tomatoes, cucumber, olives and feta">
+          <div class="special-body"><h3>Fresh Salad</h3><p>Organic &amp; fresh</p></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">Isma</p>
+        <p>Good food, great moments. Local dishes, continental meals, fast food and drinks in Freetown.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Monday – Sunday<br>10:00 AM – 10:00 PM</p>
+        <p><a href="tel:+23272578541">+232 72 578 541</a></p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Isma Restaurant, Freetown, Sierra Leone</p>
+  </footer>
+
+  <!-- ===== Book a Table pop-up (opens when the link goes to #book) ===== -->
+  <div class="modal" id="book" role="dialog" aria-labelledby="book-title">
+    <a href="#close" class="modal-backdrop" aria-label="Close" tabindex="-1"></a>
+    <div class="modal-box">
+      <a href="#close" class="modal-close" aria-label="Close">×</a>
+      <h2 class="script-title" id="book-title">Book a Table</h2>
+      <p class="modal-sub">Reserve your table in under a minute.</p>
+      <form action="#booked" method="get">
+        <div class="field">
+          <label for="b-name">Full name</label>
+          <input id="b-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="b-phone">Phone number</label>
+          <input id="b-phone" name="phone" type="tel" autocomplete="tel" placeholder="+232 76 000 000" pattern="[+0-9 ]{8,16}" title="Digits only, e.g. +232 76 000 000" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="b-date">Date</label>
+            <input id="b-date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="b-time">Time <span class="optional">(10 AM – 9:30 PM)</span></label>
+            <input id="b-time" name="time" type="time" min="10:00" max="21:30" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="b-guests">Number of guests</label>
+          <select id="b-guests" name="guests">
+            <option>1 guest</option>
+            <option selected>2 guests</option>
+            <option>3 guests</option>
+            <option>4 guests</option>
+            <option>5 guests</option>
+            <option>6 guests</option>
+            <option>7–10 guests</option>
+            <option>More than 10 guests</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-note">Special request <span class="optional">(optional)</span></label>
+          <textarea id="b-note" name="note" rows="2" placeholder="Birthday, high chair, window seat…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block">Reserve Table</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== Booking confirmation (shown after Reserve Table) ===== -->
+  <div class="modal" id="booked" role="dialog" aria-labelledby="booked-title">
+    <a href="#close" class="modal-backdrop" aria-label="Close" tabindex="-1"></a>
+    <div class="modal-box confirm">
+      <span class="confirm-icon" aria-hidden="true">✓</span>
+      <h2 id="booked-title">Table reserved</h2>
+      <p>Thank you! We’ll call you shortly to confirm your booking. See you soon!</p>
+      <a href="#close" class="btn btn-gold">Done</a>
+    </div>
+  </div>
+
+</body>
+</html>
